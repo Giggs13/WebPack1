@@ -1,0 +1,20 @@
+{
+  "name": "web-pack-v1-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/home.js",
+  "scripts": {
+    "build": "webpack",
+    "local-server": "webpack-dev-server --history-api-fallback --hot --inline --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^1.12.13"
+  },
+  "dependencies": {}
+}
