@@ -8,8 +8,7 @@ module.exports = {
     context: __dirname + "/src",
     entry: {
         home: "./home",
-        about: "./about",
-        welcome: "./welcome"
+        about: "./about"
     },
     output: {
         filename: "[name].bundle.js",
@@ -23,6 +22,9 @@ module.exports = {
         new webpack.DefinePlugin({
             PROFILE: JSON.stringify(PROFILE),
             USER: JSON.stringify(USER)
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "common"
         })
     ],
     resolve: {
